@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Accountant</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            background-color: rgb(7,183,242);
+        }
+       
+        .imageSection{
+            width: 70%;
+            float: right;
+            height: 100vh;
+        }
+        .formSection{
+            width: 30%;
+            float: left;
+            height: 90vh;
+        }
+        .content {
+            width: 70%;
+            margin: auto;
+            margin-top: 10%;
+            /*background-color: rgb(237,114,130);*/
+            background-color: white;
+            padding: 8%;
+            padding-bottom: 40%;
+            height: 50vh;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+
+        .input_box {
+
+            padding: 2%;
+        }
+
+        input {
+            /* height: 35px; */
+            width: 85%;
+            outline: none;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 3px solid white;
+            transition: all 0.3s ease;
+            color:white;
+            margin-top: 3%;
+            padding:10px;
+            background-color: rgb(82,161,250);
+        }
+
+        ::placeholder {
+            color:white;
+            
+        }
+
+        input[type="submit"] {
+            width: 50%;
+            margin-left: 25%;
+            background-color: rgb(255,180,26);
+            color: white;
+            margin-top: 5%;
+        }
+        h1{
+            color:rgb(255,180,26);
+            text-decoration: underline;
+            font-family: cursive;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="imageSection">
+            <!--<img src="image/loginAcc.jpg" width="100%" height="100%" alt="">-->
+            <img src="https://www.datacenterknowledge.com/sites/datacenterknowledge.com/files/encryption%20security%20infosec%20illustration%20getty.jpg" width="100%" height="100%" alt="">
+        </div>
+        <div class="formSection">
+            <div class="content">
+                <h1>Login Accountant</h1>
+            <form action="S_loginAccountant" method="post">
+                <div class="input_box">
+                    
+                    <input type="text" placeholder="Enter Email ?" name="AccUid" required>
+
+                </div>
+                <div class="input_box">
+                    
+                    <input type="password" placeholder="Enter Password ?" name="AccPass" required>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Login">
+                </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

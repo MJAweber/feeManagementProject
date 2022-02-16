@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Accountant</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }body{
+                background-color: rgb(255,235,209);
+            }
+
+            .container{
+                /*margin-top: 3%;*/
+            }
+            .imageSection{
+                height:100vh;
+                float: left;
+                width: 65%;
+            }
+            .formSection
+            {
+                height:100vh;
+                float: right;
+                width: 30%;
+                margin-right: 3%;
+
+            }
+            input {
+                border-radius: 5px;
+                border: none;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                margin-top: 15px;
+                padding: 8px;
+                border: 2px solid white;
+                /*background-color: rgb(244,176,22);*/
+                background-color:rgb(57,56,56);
+            }
+
+            .content {
+                /*border: 3px solid rgb(64,180,229);*/
+                text-align: center;
+                padding:2%;
+                border-radius: 5px;
+            }
+
+            #course {
+                border-radius: 5px;
+                border: none;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                margin-top: 20px;
+                padding: 8px;
+                width: 68%;
+                border: 2px solid white;
+                background-color: rgba(14, 13, 13, 0.6);
+                color: white;
+            }
+
+            ::placeholder {
+                color: white;
+            }
+            h1 {
+                text-align: center;
+                color: rgb(255,197,0);
+                font-size: 3em;
+                font-family: cursive;
+                /*text-decoration: underline;*/
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="imageSection">
+                <img src="image/addAcc1.png" width="100%" height="100%" alt="">
+            </div>
+            <div class="formSection">
+                <h1>
+                    Add Accountant
+                </h1>
+                <div class="content">
+                    <form action="S_addAccountant" method="post">
+                        <input type="text" placeholder="ID ?" name="aid">
+                        <input type="text" placeholder="Name ?" name="aname">
+                        <input type="text" placeholder="Qualification ?" name="aqua">
+                        <input type="text" placeholder="Email ?" name="auid">
+                        <input type="text" placeholder="Password ?" name="apass">
+                        <input type="text" placeholder="Mobile ?" name="amob">
+                        <br>
+                        <input style="background-color: rgb(255,197,0);" type="submit" value="Add">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

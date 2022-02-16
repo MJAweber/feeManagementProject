@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Dues</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imageSection {
+            width: 80%;
+            float: right;
+            height: 100vh;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .formSection {
+            width: 20%;
+            float: left;
+            height: 100vh;
+        }
+
+        .content {
+            width: 70%;
+            margin: auto;
+            margin-top: 5%;
+            padding: 4%;
+            padding-top: 20%;
+            height: 50vh;
+            text-align: center;
+        }
+
+        .input_box {
+            padding: 2%;
+        }
+
+        input {
+            width: 85%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            transition: all 0.3s ease;
+            color: white;
+            margin-top: 3%;
+            padding: 10px;
+            background-color: rgb(80,106,133);
+        }
+        h1 {
+            font-size: 3em;
+            font-family: cursive;
+            text-align: center;
+            color: rgb(201,64,48);
+            margin-bottom: 10%;
+        }
+        ::placeholder{
+            color: white ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imageSection">
+            <!-- <img src="https://creativehandshrconsultancy.com/wp-content/uploads/2021/06/job-interview.png" width="100%" height="100%" alt=""> -->
+       <!-- <img src="https://www.asiarecruit.com.my/includes/pics/asiarecruit-candidate-tips-interview.png"  width="100%" height="100%"  alt=""> -->
+       <img src="https://images.squarespace-cdn.com/content/v1/583c1a3ab8a79b774fc25b08/1599401913174-VQAKF1XEWAMYFZRBRYFB/competition-key.jpg?format=1000w" width="100%" height="100%" alt="">
+        </div>
+        <div class="formSection">
+            <div class="content">
+                <h1>Dues Student</h1>
+                <form action="S_duesCheckDeleteStudent" method="get">
+                <div class="input_box">
+                    <input type="text" placeholder="Enter Range ?" name="range" required>
+                </div>
+               
+                <div class="button">
+                    <input type="submit" value="Check">
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

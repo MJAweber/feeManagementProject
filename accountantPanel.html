@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accountant Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            font-family: cursive;
+            color: rgb(251, 124, 81);
+            text-decoration: underline;
+        }
+
+        .imageSection {
+            width: 45%;
+            float: left;
+            background: url(https://i.pinimg.com/originals/47/05/ea/4705ea136714883eebb3247ac24e2d7c.jpg);
+            background-size: cover;
+            height: 85vh;
+
+        }
+
+        .content {
+            width: 55%;
+            height: 85vh;
+            background-color: rgba(0, 0, 0, 0);
+            float: right;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .itemBox {
+            width: 140px;
+            margin: 4%;
+            padding: 1%;
+        }
+
+        .box {
+            height: 120px;
+            width: 140px;
+        }
+
+        .text {
+            background-color: rgb(251, 124, 81);
+            width: 140px;
+            text-align: center;
+            font-family: cursive;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            margin-top: 4%;
+            color: white;
+        }
+        input{
+            background: none;
+            border: none;
+            color:white;
+            font-family: cursive;
+            font-size: 1.1em;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Welcome To Accountant Panel</h1>
+        <a style="color:black; padding: 3px;border: 2px solid red;" href="index.html">HOME</a>
+        <div class="imageSection"></div>
+        <div class="content">
+            <div class="itemBox">
+                <div class="box">
+                    <a href="addStudent.html"><img src="icons/add.png" height="100%" width="100%" alt=""></a>
+                </div>
+                <div class="text">
+                    <a href="addStudent.html">Add Student</a>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="box">
+                    <a href="feePay.html"><img src="icons/pay.png" height="100%" width="100%" alt=""></a>
+                </div>
+                <div class="text">
+                    <a href="feePay.html">Fee Pay</a></div>
+            </div>
+            <div class="itemBox">
+                <div class="box">
+                    <img src="icons/view.png" height="100%" width="100%" alt="">
+                </div>
+                <div class="text">
+                     <form action="S_addViewStudent" method="get">
+                    <input type="submit" value="View Student">
+                </form>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="box">
+                    <img src="icons/edit.png" height="100%" width="100%" alt="">
+                </div>
+                <div class="text">
+                    <a href="duesCheck.html">Dues Check</a></div>
+            </div>
+            <div class="itemBox">
+                <div class="box">
+                    <img src="icons/search.png" height="100%" width="100%" alt="">
+                </div>
+                <div class="text">
+                    <a href="searchStudent.html">Search Student</a></div>
+            </div>
+            <div class="itemBox">
+                <div class="box">
+                    <img src="icons/delete.png" height="100%" width="100%" alt="">
+                </div>
+                <div class="text">
+                    <a href="deleteStudent.html">Delete Student</a>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

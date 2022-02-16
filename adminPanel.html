@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .content {
+            float: right;
+            width: 30%;
+            height: 100vh;
+            align-content: center;
+            background-color: rgb(238,238,238);
+        }
+        .imageSection{
+            width: 70%;
+            height: 100vh;
+            float: left;
+
+        }
+
+        .view,
+        .add,
+        .delete {
+            margin: auto;
+            background-color: rgb(255,63,93);
+            width: 50%;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            border:2px solid white;
+            font-family: cursive;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .heading{
+            width:60%;
+            text-align: center;
+            font-size: 4.4em;
+            font-family: cursive;
+            margin: auto;
+            color:rgb(5,0,164);
+            margin-top: 15%;
+            padding:5px;
+        }
+        input{
+            border:none;
+            background-color: rgba(0,0,0,0);
+            font-size: 1em;
+            color:white;
+            font-family: cursive;
+            
+        }.view{
+            margin-top: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="imageSection">
+        <img src="image/adminPanel.jpg" width="100%" height="100%" alt="">
+    </div>
+    <div class="content">
+        <div class="heading">
+        ADMIN PANEL
+    </div>
+        <div class="view">
+            <!--<a href="<%=request.getContextPath()%>/S_viewAccountant"> View Accountant</a>-->
+            <form action="S_viewAccountant" method="post">
+            <input type="submit" value="View Accountant">
+            </form>
+        </div>
+        <div class="add">
+            <a href="addAccountant.html"> Add Accountant</a>
+        </div>
+        <div class="delete">
+            <a href="deleteAccountant.html" >Delete Accountant</a>
+             
+        </div>
+       <div class="add">
+            <a href="index.html"> Home</a>
+        </div>
+        
+    </div>
+</body>
+
+</html>
